@@ -5,7 +5,7 @@ import ProductList from '../../components/ProductList';
 
 import { StyledContainer } from '../../styles/grid';
 import { useContext } from 'react';
-import { ProductsContext } from '../../components/contexts/ProductsContexts';
+import { ProductsContext } from '../../providers/ProductsContexts';
 
 const ShopPage = () => {
   const { openModal, setOpenModal } = useContext(ProductsContext);
@@ -13,7 +13,7 @@ const ShopPage = () => {
     <>
       <StyledShopPage>
         {<CartModal isOpen={openModal} />}
-        <Header />
+        <Header myIsopen={openModal} />
         <main>
           <StyledContainer containerWidth={1300}>
             <ProductList />

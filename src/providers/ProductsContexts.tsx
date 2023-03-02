@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { Api } from '../../services/api';
+import { Api } from '../services/api';
 import { UserContext } from './UsersContexts';
 
 interface iChildrenProps {

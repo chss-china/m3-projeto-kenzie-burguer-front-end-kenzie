@@ -4,7 +4,7 @@ import { StyledCartProductList } from './style';
 import { StyledButton } from '../../../styles/button';
 import { StyledParagraph } from '../../../styles/typography';
 import { useContext } from 'react';
-import { ProductsContext } from '../../contexts/ProductsContexts';
+import { ProductsContext } from '../../../providers/ProductsContexts';
 const CartProductList = () => {
   const { productSelect, setProductSelect } = useContext(ProductsContext);
   const totalSum = productSelect.reduce((accumulator, currentValue) => {

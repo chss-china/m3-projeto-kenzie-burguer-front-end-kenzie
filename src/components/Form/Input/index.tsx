@@ -16,11 +16,12 @@ interface IpropsInput {
   register: UseFormRegisterReturn<string>;
   errors?: any;
   label: string;
+  type: string;
 }
-const Input = ({ register, errors, label }: IpropsInput) => {
+const Input = ({ register, errors, label, type }: IpropsInput) => {
   return (
     <fieldset>
-      <StyledTextField label={label} type='text' {...register} />
+      <StyledTextField label={label} type={type} {...register} />
       <StyledParagraph fontColor='red'>{errors}</StyledParagraph>
     </fieldset>
   );

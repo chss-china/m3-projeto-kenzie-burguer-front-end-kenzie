@@ -2,7 +2,7 @@ import { MdSearch } from 'react-icons/md';
 import { StyledSearchForm } from './style';
 import { StyledButton } from '../../../styles/button';
 import { useContext } from 'react';
-import { ProductsContext } from '../../contexts/ProductsContexts';
+import { ProductsContext } from '../../../providers/ProductsContexts';
 
 const SearchForm = () => {
   const { filteredProducts, setFilteredProducts, setSearch, search, Products } =

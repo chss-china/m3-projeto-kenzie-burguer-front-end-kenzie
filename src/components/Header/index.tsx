@@ -8,10 +8,15 @@ import { StyledContainer } from '../../styles/grid';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
-import { ProductsContext } from '../contexts/ProductsContexts';
+import { ProductsContext } from '../../providers/ProductsContexts';
+interface Iisopen {
+  myIsopen: boolean;
+}
 
-const Header = () => {
+const Header = ({ myIsopen }: Iisopen) => {
   const navigate = useNavigate();
+  const { openModal, setOpenModal } = useContext(ProductsContext);
+
   function navigateLogin() {
     localStorage.getItem('@TokenUserHam');
     localStorage.removeItem('@TokenUserHam');
@@ -33,7 +38,7 @@ const Header = () => {
               <button
                 type='button'
                 onClick={() => {
-                  console.log('sua logica');
+                  setOpenModal(true);
                 }}
               >
                 <MdShoppingCart size={28} />

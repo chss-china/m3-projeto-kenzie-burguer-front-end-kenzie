@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Api } from '../../services/api';
+import { Api } from '../services/api';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 interface IValueProps {
@@ -46,9 +46,8 @@ export const UserProvider = ({ children }: iRegisterChildrenProps) => {
   const FunctionLogin = async (data: ILoginForm) => {
     try {
       const Response = await Api.post('/login', data);
-      setTimeout(() => {
-        navigate('/shop');
-      }, 3000);
+
+      navigate('/shop');
       let token = localStorage.setItem(
         '@TokenUserHam',
         Response.data.accessToken

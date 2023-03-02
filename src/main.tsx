@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import App from './App';
-import { UserProvider } from './components/contexts/UsersContexts';
-import { ProductsProvider } from './components/contexts/ProductsContexts';
+import { UserProvider } from './providers/UsersContexts';
+import { ProductsProvider } from './providers/ProductsContexts';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

@@ -5,7 +5,7 @@ import { SubmitHandler, useForm, UseFormRegister } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useContext } from 'react';
-import { UserContext } from '../../contexts/UsersContexts';
+import { UserContext } from '../../../providers/UsersContexts';
 
 const formSchemaLogin = yup.object().shape({
   email: yup.string().required('Email obrigatorio').email('Email invalido'),
@@ -14,7 +14,7 @@ const formSchemaLogin = yup.object().shape({
     .required('Senha obrigatoria')
     .matches(
       /(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*/,
-      'Senha invalida'
+      'Senha no minimo 6 caracteres, e com uma letra maiuscula'
     ),
 });
 interface ILoginForm {
@@ -38,11 +38,13 @@ const LoginForm = () => {
         label='Email'
         errors={errors.email?.message}
         register={register('email')}
+        type='text'
       />
       <Input
         label='Senha'
         errors={errors.password?.message}
         register={register('password')}
+        type='password'
       />
       <StyledButton $buttonSize='default' $buttonStyle='green' type='submit'>
         Entrar

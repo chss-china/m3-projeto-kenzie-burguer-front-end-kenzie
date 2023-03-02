@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ProductsContext } from '../contexts/ProductsContexts';
+import { ProductsContext } from '../../providers/ProductsContexts';
 import ProductCard from './ProductCard';
 import { StyledProductList } from './style';
 
