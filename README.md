@@ -21,6 +21,8 @@ Desenvolvi uma plataforma online para uma hamburgueria com o objetivo de fornece
 - Busca por produtos específicos
 - Proteção de rotas para maior segurança
 
+---
+
 ## Tecnologias Utilizadas
 
 - React.js
@@ -30,7 +32,7 @@ Desenvolvi uma plataforma online para uma hamburgueria com o objetivo de fornece
 - Formik e Yup (para validação de formulários)
 - Axios (para requisições HTTP)
 - Git e GitHub
-
+---
 ## Como Executar o Projeto
 
 1. Clone o repositório: `git clone https://github.com/seu-usuario/hamburgueria-kenzie.git`
@@ -41,16 +43,13 @@ Desenvolvi uma plataforma online para uma hamburgueria com o objetivo de fornece
 
 ---
 
-Adicione aqui algumas capturas de tela do projeto.
-
----
 
 
 ## Autor
 
 Caio Henrique - [chss.bolsa99@gmail.com](mailto:chss.bolsa99@gmail.com)
 
-
+---
 ## Link do Site
 
 [https://kenzie-academy-brasil-developers-kenzie-burguer-v2-t-chss-china.vercel.app/](https://kenzie-academy-brasil-developers-kenzie-burguer-v2-t-chss-china.vercel.app/)
