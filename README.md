@@ -38,7 +38,13 @@ Desenvolvi uma plataforma online para uma hamburgueria com o objetivo de fornece
 3. Instale as dependências: `npm install`
 4. Execute o projeto: `npm start`
 
+
 ---
+
+Adicione aqui algumas capturas de tela do projeto.
+
+---
+
 
 ## Autor
 
