@@ -1,23 +1,50 @@
-# projeto-kenzie-burguer
+# Projeto-Kenzie-Burguer
 
-Hamburgueria KenzieHamburgueria Kenzie
-fev de 2023 - fev de 2023fev de 2023 - fev de 2023
+## Descrição
 
-Associado(s) a Kenzie Academy BrasilAssociado(s) a Kenzie Academy Brasil
-Exibir projeto
-O projeto consiste em uma hamburgueria online que permite aos usuários se
-cadastrarem e fazerem login utilizando React-form e Yup para validação. Após o
-login, o usuário é redirecionado para a página principal, onde são exibidos todos os
-produtos disponíveis. O usuário pode adicionar ou remover produtos do carrinho, e
-o valor total é ajustado automaticamente. É impedido que um mesmo produto seja
-adicionado mais de uma vez. Ao clicar no botão "adicionar", é aberto um modal com
-os produtos adicionados, permitindo a remoção de itens individuais ou de todos de
-uma só vez. Quando a sacola está vazia, essa informação é exibida na página. O
-cabeçalho contém uma barra de pesquisa que permite a busca por produtos
-específicos. O site conta com autenticação automática e proteção de rotas para
-garantir maior segurança do usuário.
-Tecnologias:
-Typescript, Styled-Component-CSS, React js, Hooks, Bibliotecas, Git ,Github, Apis
+Desenvolvi uma plataforma online para uma hamburgueria com o objetivo de fornecer mais flexibilidade, maior alcance, maior lucro, privacidade para os usuários e disponibilidade de horários para comprar quando quiser.
 
-link do site 
-https://kenzie-academy-brasil-developers-kenzie-burguer-v2-t-chss-china.vercel.app/
+<p align="center">
+  <img src="https://i.pinimg.com/736x/1c/01/98/1c01989fe62a23b93b0346a9e51e19dc.jpg" alt="Hamburgueria Kenzie" width="400">
+</p>
+
+---
+
+## Recursos
+
+- Cadastro de usuários com validação de formulário
+- Login e autenticação de usuários
+- Navegação intuitiva pelos produtos
+- Adição e remoção de produtos no carrinho
+- Total automático no carrinho de compras
+- Modal de confirmação do pedido
+- Busca por produtos específicos
+- Proteção de rotas para maior segurança
+
+## Tecnologias Utilizadas
+
+- React.js
+- TypeScript
+- Styled Components
+- React Router
+- Formik e Yup (para validação de formulários)
+- Axios (para requisições HTTP)
+- Git e GitHub
+
+## Como Executar o Projeto
+
+1. Clone o repositório: `git clone https://github.com/seu-usuario/hamburgueria-kenzie.git`
+2. Navegue até o diretório do projeto: `cd hamburgueria-kenzie`
+3. Instale as dependências: `npm install`
+4. Execute o projeto: `npm start`
+
+---
+
+## Autor
+
+Caio Henrique - [chss.bolsa99@gmail.com](mailto:chss.bolsa99@gmail.com)
+
+
+## Link do Site
+
+[https://kenzie-academy-brasil-developers-kenzie-burguer-v2-t-chss-china.vercel.app/](https://kenzie-academy-brasil-developers-kenzie-burguer-v2-t-chss-china.vercel.app/)
