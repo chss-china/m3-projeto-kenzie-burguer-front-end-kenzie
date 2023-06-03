@@ -17,7 +17,7 @@ Desenvolvi uma plataforma online para uma hamburgueria com o objetivo de fornece
 - Navegação intuitiva pelos produtos
 - Adição e remoção de produtos no carrinho
 - Total automático no carrinho de compras
-- Modal de confirmação do pedido
+- Modal com todos produtos adicionados
 - Busca por produtos específicos
 - Proteção de rotas para maior segurança
 
