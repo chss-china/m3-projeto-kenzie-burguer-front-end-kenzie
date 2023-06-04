@@ -69,23 +69,7 @@ export const ProductsProvider = ({ children }: iChildrenProps) => {
     );
     setProductSelect(filterList);
   }
-  /*useEffect(() => {
-    async function getProduct() {
-      try {
-        const response = await Api.get('/products');
-        console.log(response);
-
-        const FilterApi = response.data.filter(
-          (eachItem: any) => eachItem.name
-        );
-
-        SetProducts(FilterApi);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    getProduct();
-  }, []);*/
+  
 
   const FilterListProducts = Products.filter((product) => {
     console.log(product);
