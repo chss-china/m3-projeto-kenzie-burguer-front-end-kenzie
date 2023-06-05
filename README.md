@@ -1,4 +1,4 @@
-# Projeto-Kenzie-Burguer
+# Projeto Kenzie Burguer
 
 ## Descrição
 
